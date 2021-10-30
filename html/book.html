@@ -1,0 +1,78 @@
+<head>
+  <link rel="stylesheet" href="../css/book.css">
+</head>
+<form action="reservation.php" method="post">
+    <div class="elem-group">
+      <label for="name">파일명_이름</label>
+      <input type="text" id="name" name="visitor_name" placeholder="파일명_이름" required>
+    </div>
+    <div class="elem-group">
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="visitor_email" placeholder="~@email.com" required>
+    </div>
+    <div class="elem-group">
+      <label for="phone">전화번호</label>
+      <input type="tel" id="phone" name="visitor_phone" placeholder="XXX-XXXX-XXXX" pattern=(\d{3})-?\s?(\d{4})-?\s?(\d{4}) required>
+    </div>
+    <!--
+    <hr>
+      <div class="elem-group inlined">
+        <label for="adult">사용 할 프린터 대수</label>
+        <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+      </div>
+      <div class="elem-group inlined">
+        <label for="checkin-date">맡기는 날짜</label>
+        <input type="date" id="checkin-date" name="checkin"  required>
+      </div>
+      <div class="elem-group inlined">
+        <label for="checkout-date">찾는 날짜</label>
+        <input type="date" id="checkout-date" name="checkout" required>
+      </div>
+    <hr>
+  -->
+    <div class="elem-group">
+      <label for="message">제작 동기와 사용되는 목적을 자세히 기술해주세요</label>
+      <textarea id="message" name="visitor_message" placeholder="만들게된 동기와 어디에 사용할 예정인지 적어주세요." required></textarea>
+    </div>
+    <div class="title_name"><h5>사용 할 프린터를 선택해주세요.</h5></div>
+    
+	  <div class="elem-group">
+        <label for="room-selection">필라멘트 색상을 선택해주세요</label>
+        <select id="room-selection" name="room_preference" required>
+            <option value="">신도리코</option>
+            <option value="DP202-1">1. 화이트 </option>
+            <option value="DP202-2">2. 블랙</option>
+            <option value="DP202-3">3. 그레이</option>
+            <option value="DP102">4. 레드</option>
+            <option value="DP103">5. 핑크</option>
+            <option value="DP104">6. 옐로우</option>
+            <option value="C600+">7. 그린</option>
+            <option value="C600+">8. 블루</option>
+            <option value="C600+">9. 퍼플</option>
+        </select>
+        <select id="room-selection" name="room_preference" required>
+          <option value="">C600</option>
+          <option value="DP202-1">1. 화이트 </option>
+          <option value="DP202-2">2. 블랙</option>
+          <option value="DP202-3">3. 레드</option>
+          <option value="DP102">4. 블루</option>
+          <option value="DP103">5. 투명</option>
+      </select>
+  </div>
+  <div>
+    <label for="name">출력물 파일(.stl/.1234dx/ .f3d 형식만 지원)</label>
+    <input type="file" accept=".stl, .1234dx, .f3d" required>
+  </div>
+  <div>
+    <label for="name">출력물 사진 캡쳐(.jpg/ .png 형식만 지원)</label>
+    <input type="file" accept=".jpg, .png" required>
+  </div>
+  
+</form>
+  <div class="btn1">
+    <input type="button" value="이전" id="btn1">
+  </div>
+  <div class="btn2">
+    <input type="button" value="다음" id="btn2">
+  </div>
+  

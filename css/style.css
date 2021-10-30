@@ -1,0 +1,65 @@
+iframe {
+  width: 350px;
+  height: 200px;
+}
+.container {
+  flex-direction: column;
+  position: absolute;
+  margin: -150px 0px 0px -200px;
+  top: 30%;
+  left: 50%;
+  
+  padding: 5px;
+}
+/*#btn1 {
+  padding: 5px;
+  margin-right: 125px;
+}
+#btn2 {
+  padding: 5px;
+  margin-left: 125px;
+}*/
+#title {
+  position: relative;
+  left: -15px;
+  /*right: 50%;
+  margin: 10px;*/
+  text-align: center;
+}
+#subtitle {
+  position: relative;
+  left: -15px;
+  /* right: 20%;
+  top: 60px; */
+  text-align: center;
+} 
+#btn1 { /*버튼*/
+  background-color: #18A86B; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 15px;
+  }
+
+.button1 {width: 50px;}
+#btn2 { /*버튼*/
+  background-color: #18A86B; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 15px;
+  }
+
+.button1 {width: 50px;}
